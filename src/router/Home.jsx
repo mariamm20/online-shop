@@ -16,7 +16,7 @@ class Home extends Component {
                             with the best qualities, best price
                             and best offers.
                         </p>
-                        <button className="btn btn-primary mt-3">SHOP NOW</button>
+                        <Link to="/products" className="btn btn-primary mt-3 shopBtn" >SHOP NOW</Link>
                     </div>
                 </section>
                 <section className="homeProducts container">
@@ -27,7 +27,11 @@ class Home extends Component {
                     <div className="cards">
                         {this.props.itemsList.slice(0,4).map((item,index) => {
                             return (
-                                <Link to="#">
+                                <Link to={{
+                                    pathname: `/products/${item.id}`,
+                                    SelectedObject: item
+                                }}
+                                >
                                     <div className="card">
                                         <img src={`img/${item.Image}`} className="card-img-top" alt={`item-0${index+1}`}/>
                                         <div className="card-body">
@@ -52,7 +56,7 @@ class Home extends Component {
                         Let's discove more fashionable and elegent clothes
                         with best prices EVER!
                     </p>
-                    <button className="btn btn-outline-primary btn-light  mt-3">Discover</button>
+                    <Link to="/products" className="btn btn-outline-primary btn-light  mt-3">Discover</Link>
 
                 </div>
             </>

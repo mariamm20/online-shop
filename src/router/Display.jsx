@@ -19,7 +19,7 @@ class Display extends Component {
                         {this.props.itemsList.map((item, index) => {
                             return (
                                 <Link to={{
-                                    pathname: `/products/${index}`,
+                                    pathname: `/products/${item.id}`,
                                     SelectedObject: item
                                 }}
                                     className="col-lg-3 ">

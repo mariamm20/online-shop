@@ -31,11 +31,11 @@
     border-bottom: 5px solid #3a8bcd;
     width: 55px;
 }
-.home button{
+.home .shopBtn{
     font-weight: lighter;
     color: #fff;
 }
-.home button:hover{
+.home .shopBtn:hover{
     color: #3a8bcd !important;
     background-color: #fff !important;
     transition: all 0.7s;
@@ -96,12 +96,7 @@
     text-align: center;
     padding: 50px 30px;
 }
-.discover button:hover{
-    background-color: #fff !important;
-    color: #3a8bcd !important;
-    font-weight: bold;
-    transition: all 0.1s;
-}
+
 
 
 
