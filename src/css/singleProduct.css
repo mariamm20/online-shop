@@ -27,3 +27,23 @@
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
 }
+
+@media (max-width:923px) {
+    .singleProduct{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .productDetails{
+        width: auto;
+        text-align: center;
+    }
+    .productDetails p{
+        width: auto;
+    }
+    .cardFooter{
+        justify-content: center;
+    }
+    .productDetails h2{
+        margin: 15px 0;
+    }
+}

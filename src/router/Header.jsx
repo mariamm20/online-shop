@@ -17,7 +17,7 @@ class Header extends Component {
 
                 <div className="contaier header">
                     <div className="menudiv">
-                    <img src="img/logo.png" alt="logo" className="py-4" />
+                    <Link to='/'><img src="img/logo.png" alt="logo" className="py-4" /></Link>
                     <button className="btn btn-primary d-none menu" onClick={
                         () => {
                             let nav = document.querySelector('.header ul');

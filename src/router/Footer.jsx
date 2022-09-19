@@ -12,7 +12,7 @@ class Footer extends Component {
         return (<>   
         <div className="line"></div>         
         <div className="d-flex justify-content-between align-items-center container footer">
-            <img src="img/logo.png" alt="logo" className="py-4" />
+        <Link to='/'><img src="img/logo.png" alt="logo" className="py-4" /></Link>
             <div className="icons">
                 {<FontAwesomeIcon icon={faFacebookF} />}
                 {<FontAwesomeIcon icon={faTwitter} />}

@@ -1,0 +1,17 @@
+{
+  "name": "fakeapiserver",
+  "version": "1.2.3",
+  "description": "any desc",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run json:server db.json",
+    "json:server":"json-server db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nadia",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "save": "^2.4.0"
+  }
+}
