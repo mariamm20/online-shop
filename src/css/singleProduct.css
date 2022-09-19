@@ -1,0 +1,29 @@
+.singleProduct{
+    justify-content: center;
+    padding: 50px;
+}
+.productDetails{
+    width: 50%;
+}
+.productImage{
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 0 50px;
+    border-radius: 10px;
+}
+.productDescription{
+    width: 80%;
+    opacity: 0.8;
+    line-height: 25px;
+}
+.productPrice{
+    color: #3a8bcd;
+}
+.productDetails h2{
+    margin-bottom: 15px;
+}
+.productCategory{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}

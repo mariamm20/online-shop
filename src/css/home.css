@@ -1,0 +1,147 @@
+.home{
+    background-image: url('/public/img/banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .homeText{
+    background-color: rgba(255,255,255,0.8);
+    padding: 50px;
+    width: fit-content;
+    position: relative;
+    left: 100px;
+    border-radius: 10px;
+}
+.home p{
+    width: 315px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+    /* font-weight: 600; */
+    font-size: 18px;
+    color: rgba(0,0,0,0.8);
+}
+.home h1{
+    letter-spacing: 4px;
+    
+}
+.underline{
+    border-bottom: 5px solid #3a8bcd;
+    width: 55px;
+}
+.home button{
+    font-weight: lighter;
+    color: #fff;
+}
+.home button:hover{
+    color: #3a8bcd !important;
+    background-color: #fff !important;
+    transition: all 0.7s;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+.cards a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.cards a:hover{
+    color: #3a8bcd;
+    transition: all 0.7s;
+}
+.cards a:hover img{
+    opacity: 0.8;
+    transition: all 0.7s;
+}
+.cards h6{
+    color: #3a8bcd;
+}
+
+.card{
+    width: 240px;
+    padding: 30px;
+}
+.card img{
+    width: 100%;
+    border-radius: 0;
+}
+.card-body{
+    padding-left:0 ;
+    padding-bottom: 0;
+}
+.homeProducts h3{
+    padding-top: 30px;
+    
+}
+.homeProducts{
+    padding: 30px 0;
+}
+.cards h5{
+    font-size: 16px;
+}
+.featured-products{
+    display: flex;
+    flex-direction: column;
+   
+}
+.discover{
+    background-color: #3a8bcd;
+    color: #fff;
+    text-align: center;
+    padding: 50px 30px;
+}
+.discover button:hover{
+    background-color: #fff !important;
+    color: #3a8bcd !important;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    .home{
+        background-image: url('/public/img/banner-bg.jpg');
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .homeText{
+        background-color: rgba(255,255,255,0.8);
+        padding: 50px;
+        width: fit-content;
+        left: 0;
+        border-radius: 10px;
+    }
+    
+}
+@media (max-width:630px) {
+    .home .homeText{
+        padding: 25px 15px;
+
+    }
+    .home p{
+        width: 240px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        /* font-weight: 600; */
+        font-size: 16px;
+        color: rgba(0,0,0,0.8);
+    }
+    .home h1{
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+}

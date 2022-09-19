@@ -1,0 +1,18 @@
+.displayCards a{
+    margin-bottom: 20px;
+}
+.cardBtn:hover{
+    color: white !important;
+}
+.cardBtn{
+    margin-top: 10px !important;
+}
+
+@media (max-width:515px) {
+    .cards{
+       justify-content: center; 
+    }
+    .featured-products{
+        align-items: center;
+    }
+}

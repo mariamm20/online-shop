@@ -1,0 +1,32 @@
+.icons svg{
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 50%;
+    padding: 13px 15px;
+    margin: 10px;
+}
+.copyright{
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+.icons svg:hover{
+    background-color: #bbb;
+    cursor: pointer;
+}
+.line{
+    border-bottom: 1px solid #ddd;
+}
+@media (max-width:485px) {
+    .footer{
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
