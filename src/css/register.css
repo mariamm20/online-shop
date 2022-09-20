@@ -1,0 +1,19 @@
+.register{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 55px 70px;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* justify-content: center; */
+    margin: 0 110px;
+    float: right;
+    background-color: rgba(255,255,255,0.9);
+}
+.registerSection{
+    background-image: url('/public/img/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    height: 700px;
+}

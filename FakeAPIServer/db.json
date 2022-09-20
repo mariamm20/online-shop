@@ -1,92 +1,110 @@
 {
   "products": [
-    { 
-      "id":1,
+    {
+      "id": 1,
       "Name": "Proin vel ligula",
       "Image": "item-01.jpg",
       "price": 15,
       "stock": 7,
       "category": "Pants,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":2,
+      "id": 2,
       "Name": "Erat odio rhoncus",
       "Image": "item-02.jpg",
       "price": 25,
       "stock": 10,
       "category": "Pants,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":3,
+      "id": 3,
       "Name": "Sed purus quam",
       "Image": "item-03.jpg",
       "price": 45,
       "stock": 4,
       "category": "Sweaters,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":4,
+      "id": 4,
       "Name": "Morbi aliquet",
       "Image": "item-04.jpg",
       "price": 55,
       "stock": 6,
       "category": "Bags,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":5,
+      "id": 5,
       "Name": "Urna ac diam",
       "Image": "item-05.jpg",
       "price": 60,
       "stock": 5,
       "category": "Bags,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":6,
+      "id": 6,
       "Name": "Proin eget imperdiet",
       "Image": "item-06.jpg",
       "price": 75,
       "stock": 1,
       "category": "Shoes,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":7,
+      "id": 7,
       "Name": "Cras tempus",
       "Image": "item-05.jpg",
       "price": 35,
       "stock": 14,
       "category": "Hand Bags,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     },
     {
-      "id":8,
+      "id": 8,
       "Name": "Nullam risus nisl",
       "Image": "item-01.jpg",
       "price": 95,
       "stock": 2,
       "category": "Pants,Women,Lifestyle",
-      "description" : "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
+      "description": "Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit."
     }
   ],
   "registers": [
     {
-      "userName": "Nadia",
-      "password": "123456"
+      "Name": "Mero Mohamed",
+      "Email": "mero000@gmail.com",
+      "Password": "0000",
+      "Address": "alex",
+      "Phone": "01091857132",
+      "id": 1
     },
     {
-      "id": 120,
-      "userName": "test1",
-      "password": "123456222"
+      "Name": "Mariam",
+      "Email": "mariam@gmail.com",
+      "Password": "0000",
+      "Address": "Alexandria",
+      "Phone": "01091857132",
+      "id": 2
     },
     {
-      "id": 222,
-      "userName": "Nadia",
-      "password": "123456"
+      "Name": "Eman",
+      "Email": "eman@gmail.com",
+      "Password": "0000",
+      "Address": "Mansoura",
+      "Phone": "01211543789",
+      "id": 3
+    },
+    {
+      "Name": "basma",
+      "Email": "basma@gmail.com",
+      "Password": "123",
+      "Address": "Mansoura",
+      "Phone": "01245879332",
+      "id": 4
     }
   ]
 }
