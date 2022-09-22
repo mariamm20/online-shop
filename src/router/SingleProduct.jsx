@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 
 class SingleProduct extends Component {
+    
     render() {
         console.log(this.props.location.SelectedObject)
         return (
@@ -29,8 +30,11 @@ class SingleProduct extends Component {
                     </p>
                     <h6 className="productStock">Only <span className="text-bold text-primary">{this.props.location.SelectedObject.stock}</span> in Stock. Hurry Up and Buy it. </h6>
                     <div className="cardFooter d-flex">
-                        <Link to="#" className="btn btn-outline-primary text-primary m-0 cardBtn me-3"> {<FontAwesomeIcon icon={faCartShopping} />} Add To Cart</Link>
-                        <Link to="#" className="btn btn-outline-success text-success m-0 cardBtn">{<FontAwesomeIcon icon={faBagShopping} />} Order Now</Link>
+                        <button  className={`btn btn-outline-primary text-primary m-0 cardBtn me-3 added`} onClick={() => this.props.addtocart(this.props.location.SelectedObject, this.props.location.SelectedObject.id)}> {<FontAwesomeIcon icon={faCartShopping} />} <span>Add To Cart</span></button>
+                        <Link to={{
+                                                pathname: `/order/${this.props.location.SelectedObject.id}`,
+                                                SelectedObject: this.props.location.SelectedObject
+                                            }} className="btn btn-outline-success text-success m-0 cardBtn">{<FontAwesomeIcon icon={faBagShopping} />} Order Now</Link>
                     </div>
                 </div>
             </section>

@@ -12,7 +12,6 @@ class Register extends Component {
         userName: '',
         userEmail: '',
         userPassword: '',
-        userAddress: '',
         userPhone: ''
     }
     InputHandler = (e) => {
@@ -25,7 +24,6 @@ class Register extends Component {
             Name: this.state.userName,
             Email: this.state.userEmail,
             Password: this.state.userPassword,
-            Address: this.state.userAddress,
             Phone: this.state.userPhone
         });
 
@@ -64,20 +62,13 @@ class Register extends Component {
                         </div>
 
                         <div className="">
-                            <label for="validationCustom03" className="form-label">Adress</label>
-                            <input type="text" className="form-control" name="userAddress" onChange={this.InputHandler} placeholder="Alexandria" id="validationCustom03" required />
-                            <div className="invalid-feedback">
-                                Please provide a valid city.
-                            </div>
-                        </div>
-
-                        <div className="">
                             <label for="validationCustom05" className="form-label">Phone Number</label>
                             <input type="text" className="form-control" name="userPhone" onChange={this.InputHandler} id="validationCustom05" placeholder="01091857132" required />
                             <div className="invalid-feedback">
                                 Please provide a valid zip.
                             </div>
                         </div>
+                        <p className="mt-3">Already Have Account. <a className="text-primary" href="/login">LOG IN</a></p>
 
                         <div className="mt-3 text-center">
                             <Link to='/login' className="btn btn-primary" type="submit" onClick={this.saveData} >Register</Link>

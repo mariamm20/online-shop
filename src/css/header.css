@@ -16,11 +16,20 @@
 .menudiv button{
     height: fit-content;
 }
-@media (max-width:640px) {
+.profile{
+    pointer-events: none;
+}
+@media (max-width:845px) {
 
     .nav{
         flex-direction: column;
         display: none;
+        display: none;
+    text-align: left;
+    background-color: rgb(238, 238, 238);
+    box-shadow: rgb(204 204 204) 0px 3px 10px;
+    /* transition: all 0.7s ease 0s;*/
+    
     }
     .menudiv{
         display: flex;
@@ -29,6 +38,12 @@
     }
     .menu{
         display: block !important;
+    }
+    .start-100{
+        left: auto !important;
+    }
+    .translate-middle {
+        transform: unset!important;
     }
     
 

@@ -76,19 +76,11 @@
   "registers": [
     {
       "Name": "Mero Mohamed",
-      "Email": "mero000@gmail.com",
+      "Email": "mero5691@gmail.com",
       "Password": "0000",
       "Address": "alex",
       "Phone": "01091857132",
       "id": 1
-    },
-    {
-      "Name": "Mariam",
-      "Email": "mariam@gmail.com",
-      "Password": "0000",
-      "Address": "Alexandria",
-      "Phone": "01091857132",
-      "id": 2
     },
     {
       "Name": "Eman",
@@ -105,6 +97,28 @@
       "Address": "Mansoura",
       "Phone": "01245879332",
       "id": 4
+    },
+    {
+      "Name": "Menna",
+      "Email": "menna@gmail.com",
+      "Password": "123",
+      "Address": "Alexandria",
+      "Phone": "0234587822",
+      "id": 5
+    },
+    {
+      "Name": "Rofida Mohamed",
+      "Email": "rofidam26@gmail.com",
+      "Password": "1234",
+      "Phone": "01280461090",
+      "id": 6
+    },
+    {
+      "Name": "Mariam Mohamed",
+      "Email": "mero5691@gmail.com",
+      "Password": "0000",
+      "Phone": "01091857132",
+      "id": 7
     }
   ]
 }

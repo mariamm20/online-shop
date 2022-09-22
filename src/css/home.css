@@ -66,10 +66,12 @@
 .card{
     width: 240px;
     padding: 30px;
+    margin-bottom: 20px;
 }
 .card img{
     width: 100%;
     border-radius: 0;
+    
 }
 .card-body{
     padding-left:0 ;

@@ -8,16 +8,18 @@ import SingleProduct from "./SingleProduct";
 import Register from "./Register";
 import Login from './Login'
 import Swal from 'sweetalert2'
-
+import Cart from './Cart'
+import Order from "./Order";
+import About from "./About";
+import Contact from './Contact'
 
 export default class AppRouter extends Component {
     state = {
         items: null,
         persons: null,
-        loged: false,
-        userData:null,
-        localEmail: localStorage.getItem('Email'),
+        userData:null,  
     }
+    
 
     componentDidCatch() {
         this.getItems();
@@ -48,21 +50,7 @@ export default class AppRouter extends Component {
                 console.log(res)
             });
     }
-    handleNav(){
-        let p = document.querySelector('.header .profile');
-        let r = document.querySelector('.header .reg');
-        let lon = document.querySelector('.header .lon');
-        if(p.innerHTML !== ''){
-            p.style.display = 'block'
-            r.style.display = 'none'
-            lon.style.display = 'none'
-        }
-        else{
-            p.style.display = 'none'
-            r.style.display = 'block'
-            lon.style.display = 'block'
-        }
-    }
+    
     LoginHandler = (obj) => {
         let emails = [];
         let passwords = [];
@@ -81,7 +69,6 @@ export default class AppRouter extends Component {
                 if (check !== -1) {
                     if (passwords[check] === obj['Password']) {
                         this.setState({
-                            loged: true,
                             userData: res[check]
                         },()=>{console.log(this.state.loged,this.state.userData)})
                         Swal.fire({
@@ -90,7 +77,9 @@ export default class AppRouter extends Component {
                             showConfirmButton: false,
                             timer:2000,                     
                           })
-                          window.localStorage.setItem('userData',JSON.stringify(res[check]))
+                          window.localStorage.setItem('userData',JSON.stringify(res[check]));
+                          window.localStorage.setItem('logedIn','true');
+                          window.location.href='/home'
                           this.handleNav();
                     }
                     else {
@@ -114,12 +103,54 @@ export default class AppRouter extends Component {
 
             });
     }
+
+    AddToCard = (productData , id) =>{
+        if(localStorage.getItem(`product ${id}`) !== null){
+            Swal.fire({
+                icon: 'info',
+                title: 'Already Added!',
+                showConfirmButton: false,
+                timer:1500,                     
+              })
+        }
+        else{
+            localStorage.setItem(`product ${id}`,JSON.stringify(productData));
+
+            let badge = document.querySelector('.badge');
+            
+            badge.innerHTML = parseInt(badge.innerHTML) +1 ;
+
+            Swal.fire({
+                icon: 'success',
+                title: 'Added Successfully!',
+                showConfirmButton: false,
+                timer:1500,                     
+              })
+        }
+       
+        
+        
+        
+    }
+    
+    RemoveHandler = (id)=>{
+        localStorage.removeItem(`product ${id}`);
+        let contain = document.querySelector(`.big-container${id}`);
+        // console.log(contain)
+        contain.remove();
+        let badge = document.querySelector('.badge');
+        badge.innerHTML = parseInt(badge.innerHTML) - 1;
+        if(badge.innerHTML === '0'){
+            window.location.reload();
+        }
+    }
+    
     render() {
         
         return (
             <div>
                 <BrowserRouter>
-                    <Header loginState= {this.state.loged} userData={this.state.userData} />
+                    <Header  userData={this.state.userData} />
                     <Route
                         component={() => {
                             return (
@@ -140,7 +171,7 @@ export default class AppRouter extends Component {
                     <Route
                         component={() => {
                             return (
-                                <Display itemsList={this.state.items} />
+                                <Display itemsList={this.state.items} addtocart={this.AddToCard} />
                             );
                         }}
                         path="/products"
@@ -150,7 +181,7 @@ export default class AppRouter extends Component {
                     <Route
                         component={(props) => {
                             return (
-                                <SingleProduct {...props} itemsList={this.state.items} />
+                                <SingleProduct {...props} itemsList={this.state.items} addtocart={this.AddToCard} />
                             );
                         }}
                         path="/products/:id"
@@ -172,6 +203,42 @@ export default class AppRouter extends Component {
                             );
                         }}
                         path="/login"
+
+                    />
+                    <Route
+                        component={() => {
+                            return (
+                                <Cart remove = {this.RemoveHandler} />
+                            );
+                        }}
+                        path="/cart"
+
+                    />
+                    <Route
+                        component={(props) => {
+                            return (
+                                <Order {...props} />
+                            );
+                        }}
+                        path="/order/:id"
+
+                    />
+                    <Route
+                        component={() => {
+                            return (
+                                <About  />
+                            );
+                        }}
+                        path="/about"
+
+                    />
+                    <Route
+                        component={() => {
+                            return (
+                                <Contact />
+                            );
+                        }}
+                        path="/contact"
 
                     />
                     <Footer />

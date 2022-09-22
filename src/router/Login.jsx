@@ -51,7 +51,7 @@ class Register extends Component {
                         </div>
 
                         <div className="mt-3 text-center">
-                            <Link to='/profile' className="btn btn-primary" type="submit" onClick={this.saveData} >Login</Link>
+                            <Link to='#' className="btn btn-primary" type="submit" onClick={this.saveData} >Login</Link>
                         </div>
                     </form> 
 
